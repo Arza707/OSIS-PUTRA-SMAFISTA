@@ -1,0 +1,662 @@
+/* --------------------------------------------- Keseluruhan ---------------------------------------------------- */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(143, 171, 191);
+ 
+  scroll-behavior: smooth;
+}
+
+h1{
+  font-family: "inter", sans-serif;
+}
+
+section {
+  height: 100vh; /* layar penuh */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+a{
+  text-decoration: none;
+}
+
+/* -------------------------------------------------- Bagian Menu ----------------------------------------------- */
+
+.bgMenu{ /* Background menu OSIS SMA __"__ */
+
+  border: 0px solid;
+  background-color: RGB(143, 171, 191);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 10%;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 💡 bayangan lembut */
+  width: 100%;
+}
+.menu-container {
+  display: flex;
+  flex-direction: row; /* Mengatur elemen dalam kolom */
+  align-items: center; /* Menyelaraskan elemen di tengah */
+}
+#logoIG {
+  font-size: 50px;
+  padding:7px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+#logoIG:hover{
+  transform: scale(1.2);
+}
+
+#namaIG {
+  font-size: 25px;
+  text-align: center;
+}
+.kotak { /* agar bisa memberikan space antara garis dengan kanan& kirinya */
+  height: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.garis{
+  border: 2px solid;
+  height: 50px;
+}
+#OSISsma { /* Tulisan OSIS SMA di sebelah kanan logo osis */
+  font-size: 20px;
+  text-align: center; 
+}
+#logoOsis { 
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0px; /* Menambahkan jarak di bawah logo */
+  transition: transform 0.5s ease;
+}
+#logoOsis:hover{
+  transform: scale(1.2);
+}
+
+/* ------------------------------------------ Bagian latar gedung alfityan 1 -------------------------------------*/
+
+#bg1 { /* Background Geudng alfityan*/
+  background-image: url("picture/alfityan2-gambargedung.png");
+  border-bottom-left-radius: 50% 100px;
+  border-bottom-right-radius: 50% 100px;
+  overflow: hidden;
+  box-shadow: 0px 5px 30px RGB(24, 67, 128);
+  box-sizing: border-box;
+}
+
+.container2{ /* Container alpit */
+  width: 420px;
+  height: 65px;
+  border: 0px solid;
+  position: absolute;
+  background-color: RGB(143, 171, 191);
+  left: -280px;
+  top: 110px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: transform 0.5s ease-out;
+}
+
+.container2:hover{ /* Ketika kursor menyentuh container Al-fityan */
+  transform: translateX(280px);
+}
+
+
+
+#logoalpit{ /* gambar logo alpit */
+  position: relative;
+  width: 80px;
+  padding: 6px;
+
+  top: 2px;
+  
+  
+}
+
+#linkalpit{ /* hitbox buat mencet link alpit */
+  position:relative;
+  left: 300px;
+  z-index:2;
+  
+}
+
+#alpitOW{ /* Tulisan Al-Fityan Official Website */
+  font-size: 25px;
+  position: relative;
+  bottom: 85px;
+  text-align: center;
+  width: 70%;
+  height: 10%;
+  font-family: "inter", sans-serif;
+  
+}
+#logoOsis2{ /* gambar logo osis yang di bagian section background gedung al-fitan*/
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+}
+
+#welcome-container{ /* Gabungan antara kata OSIS dan SMAFISTA*/
+  position: absolute;
+  margin-top: -0px;
+  border: 0px solid;
+  box-sizing: border-box;
+  width: auto;
+  margin-right: 700px;
+}
+
+#welcome2-container{/* Gabungan antara kata OSIS dan SMAFISTA agar jadi 1 kalimat biar gak berantakan ketika di zooom out/in*/
+  border-radius: 20px;
+  background:linear-gradient(to right, RGB(252, 234, 194), RGB(24, 67, 128));
+  padding: 7px;
+  transition: box-shadow o.5s ease-out;
+}
+
+#welcome2-container:hover{ /* ketika kursor menyentuh Gabungan kata OSIS dan SMAFISTA agar muncul shadow di belakang*/
+  box-shadow: 10px 0px 10px black;
+}
+
+#welcome3-container{ /* Gabungan kata putra, official, dan website agar bisa diubah posisinya jadi di kanan*/
+  border:0px solid;
+  text-align:end;
+}
+
+#welcome{ /* Tulisan Welcome to*/
+  display: inline;
+
+  
+  font-size: 50px;
+}
+
+#welcome2{ /* Tulisan OIS SMAFISTA*/
+  display: inline;
+  font-size: 70px;
+  text-align: center;
+ 
+  
+}
+
+#welcome3{ /* Tulisan putra official website*/
+  display: inline;
+  
+}
+
+
+
+#boxTahun{
+  text-align:center;
+  width:300px;
+}
+
+#tahun{
+  border-radius: 20px;
+  background:linear-gradient(to right, RGB(252, 234, 194), RGB(24, 67, 128));
+}
+
+.container1{ /* container melengkung dibelakang wian & cesar*/
+  width: 900px;
+  height: 500px;
+  border: 0px solid;
+  position: sticky;
+  position: relative;
+  top: 300px;
+  left: 400px;
+  background: linear-gradient(to right, RGB(252, 234, 194), RGB(24, 67, 128));
+  border-top-left-radius: 100% 900px;
+  border-top-right-radius: 100% 900px ;
+  box-shadow: 10px 0px 10px black;
+  
+}
+
+#tulisanKetua{
+  background: RGB(24, 67, 128);
+  color: RGB(252, 234, 194);
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  top:-180px;
+  right:540px;
+  font-size: 40px;
+  opacity: 0;
+  
+  transition: all 0.5s ease-out;
+
+}
+#mahkota{
+  position: absolute;
+  top: -370px;
+  right: 505px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+#tulisanWakil{
+  background: RGB(252, 234, 194);
+  color: RGB(24, 67, 128);
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  font-size: 30px;
+  top:-120px;
+  right: 275px;
+  opacity: 0;
+  z-index:1;
+
+  transition: all 0.5s ease-out;
+}
+
+#cntnrWian{ /*Hitbox animasi wian*/
+  height:470px;
+  width: 320px;
+  margin-top:-170px;
+  margin-left: 100px;
+}
+#cntnrCesar{ /*Hitbox animasi cesar*/ 
+  width: 280px;
+  height: 200px;
+  margin-left:465px;
+}
+
+#cesar{ /* gambar caesar*/
+  position: absolute;
+  width: 300px;
+  bottom: 100px;
+  left:370px;
+  transition: transform 0.5s ease-out;
+  transform: scale(1) translateY(0);
+  z-index:2;
+}
+
+#wian{ /* Gambar wian */
+  position: absolute;
+  bottom: 100px;
+  right: 400px;
+  width: 400px;
+  transition: transform 0.5s ease-out;
+  transform: scale(1);
+  z-index:2;
+}
+
+#wian:hover{ /* Ketika kursor menyentuh gambar wian */
+  transform: scale(1.2) translateY(-50px);
+}
+#cntnrWian:hover #tulisanKetua{ /* Ketika kursor menyentuh hitbox bagian wian, maka muncul tulisan ketua osis */
+  transform: translateX(-100px);
+  opacity: 1;
+  
+}
+#cntnrWian:hover #mahkota{ /* Ketika kursor menyentuh hitbox bagian wian, maka muncul gambar mahkota */
+  opacity: 1;
+  
+}
+
+#cesar:hover{ /* Ketika kursor menyentuh gambar caesar */
+  transform: scale(1.1) translateY(-50px) ;
+  z-index:3;
+}
+#cntnrCesar:hover #tulisanWakil{ /* Ketika kursor menyentuh hitbox bagian caesar, maka muncul tulisan wakil osis */
+  transform: translateX(100px);
+  opacity: 1;
+  
+}
+
+
+
+/* ----------------------------------------------- Bagian latar abu-abu ------------------------------------------*/
+
+#bg2 { /* Background Abu-abu*/
+  height: 1000px;
+  border-bottom-left-radius: 50% 100px;
+  border-bottom-right-radius: 50% 100px;
+  background-image: url(picture/osis-blur.png);
+  background-size: cover;
+
+}
+
+.containerBg2{
+  border: 0px solid;
+  min-height:100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  gap:100px;
+  align-items: center;
+  
+}
+
+.bg2Box1{
+  display: flex;
+  border: 0px solid;
+  width: 70%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bg2Box2{
+  display: flex;
+  border: 0px solid;
+  flex-wrap: wrap;
+  height: 25%;
+  width: 100%;
+  padding: 5%;
+ 
+}
+#judul{
+  border-radius: 20px;
+  background:linear-gradient(to Left, RGB(252, 234, 194), RGB(24, 67, 128));
+  padding: 7px;
+}
+
+#boxJudul{
+  border: 0px solid;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+
+}
+.boxP1{
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  
+  border-radius: 20px;
+  font-family: "inter", sans-serif;
+  font-size: 25px;
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  backdrop-filter: blur(10px); /* inilah efek blur */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  padding: 0%;
+  animation: slideAtas 2s ease-out;
+}
+
+.fadeUp{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.fadeUp.ukuranNormal{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* -------------------------------------------------------- Bagian latar awan ----------------------------------------------------*/
+
+
+#bg3 { /* Background awan*/
+  background-image: url("picture/Awan.jpg");
+  box-shadow: 0px 0px 100px RGB(24, 67, 128);
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+  background-size: cover;
+  
+}
+
+.containerBg3 {
+  border: 3px solid;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-color: red;
+  height:100%;
+}
+
+
+
+.bg3Box1{
+  display: flex;
+  border: 3px solid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-color: yellow;
+}
+.bg3Box2{
+  display: flex;
+  border: 0px solid;
+  width: 70%;
+  flex-wrap: wrap;
+  border-color: lightgreen;
+  justify-content: center;
+  align-items: center;
+}
+.bg3Box3{
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid;
+  width: 50%;
+  border-color: blue;
+  justify-content: center;
+  align-items: center;
+}
+#bg3Box4{
+  text-align: center;
+  flex-wrap: wrap;
+  border: 0px solid;
+  width: 100%;
+  border-color: bisque;
+  
+
+}
+#bg3Box41{
+  text-align: center;
+  flex-wrap: wrap;
+  border: 0px solid;
+  width: 100%;
+  border-color: bisque;
+  
+
+}
+#bg3Box5{
+  text-align: center;
+  border: 0px solid;
+  flex-wrap: wrap;
+  width: 100%;
+  border-color: brown;
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  backdrop-filter: blur(10px); /* inilah efek blur */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  border-radius: 20px;
+  padding: 10px;
+}
+#bg3Box51{
+  text-align: center;
+  border: 0px solid;
+  flex-wrap: wrap;
+  width: 100%;
+  border-color: brown;
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  backdrop-filter: blur(10px); /* inilah efek blur */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  border-radius: 20px;
+  padding: 10px
+}
+
+* { box-sizing: border-box; }
+body { font-family: sans-serif; margin: 0; }
+
+#carousel-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.prev-btn {
+  left: 10px;
+  opacity: 0.3;
+}
+
+.prev-btn:hover{
+  opacity: 1;
+  box-shadow: 10px 0px 10px black;
+}
+
+.next-btn {
+  right: 10px;
+  opacity: 0.3;
+}
+
+.next-btn:hover{
+  opacity: 1;
+  box-shadow: -10px 0px 10px black;
+}
+
+
+
+
+
+
+
+
+/* ------------------- Bagian POV dari Hp, sehingga layout di hp berbeda dari di desktop aar tidak berantakan ------------------- */
+
+@media (max-width: 768px) {
+
+  .bgMenu{ /* Background menu */
+    width:100%;
+  }
+  
+  .titleVisiMisi{
+    margin-top: 30%;
+  }
+
+  .bg1 { /* Background gedung al-fityan */
+    background-position: left top;
+    background-size: cover;
+    height: 1000px;
+  }
+
+  .kotak{
+    display: none;
+  }
+
+  #bg2{
+    height: 1500px;
+  }
+
+  #logoOsis{
+    display: none;
+  }
+  #OSISsma{
+    display: none;
+  }
+  .garis{
+    display: none;
+  }
+
+  .container1 { /* container melengkung dibelakang wian & cesar*/
+    display: none; /* Dihilangkan biar tidak memakan tempat di hp*/
+  }
+
+  #welcome-container { /* Gabungan dari tulisan welcome to kebawah sampai putra official website agar jadi 1 kalimat biar gak berantakan ketika di zooom out/in*/
+    margin-bottom: 0px;
+    position: absolute;
+    margin-left: 700px;
+    font-size: 30px;
+    height: 120px;
+    width:100%;
+  }
+  #welcome{ /* Tulisan Welcome to*/
+    font-size: 30px;
+  }
+  #welcome2{ /* Tulisan OSIS SMAFISTA*/
+    font-size: 45px;
+  }
+  #welcome3{ /* Tulisan putra official website*/
+    font-size: 20px;
+  }
+  #logoOsis2{
+    position: absolute;
+    margin-top: 100px;
+  }
+
+  .containerBg2{
+    size: cover;
+  }
+
+  #boxJudul{
+   height: 250px;
+  }
+}
+/* ----------------------------------------- Bagian Animasi ---------------------------------------------------- */
+
+@keyframes slideDown{
+    from{margin-top: -10%;}
+    to{margin-top: 0%;}
+    0%{opacity: 0%;}
+}
+@keyframes slideAtas{
+  from{margin-bottom: -10%;}
+  to{margin-bottom: 0%;}
+  0%{opacity: 0%;}
+}
+
+@keyframes zoomInWian{
+  from{width: 400px;}
+  to{width: 500px;}
+}
+
+@keyframes zoomInCesar{
+  from{width: 300px; z-index: 1;}
+  to{width: 400px;z-index:2;}
+}
+
+@keyframes zoomOutWian{ 
+  from{width: 500px;}
+  to{width: 400px;}
+}
+@keyframes zoomOutCesar{ 
+  from{width: 400px;}
+  to{width: 300px;}
+}
+@keyframes slideRight{
+  from{margin-left: -280px;}
+  to{margin-left: 280px;}
+}
+@keyframes slideLeft{
+  from{margin-left: 280px;}
+  to{margin-left: 0px;}
+}
