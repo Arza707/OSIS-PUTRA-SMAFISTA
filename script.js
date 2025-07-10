@@ -42,6 +42,7 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateSlide();
 }
+setInterval(nextSlide, 5000);
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 anchor.addEventListener("click", function(e) {
@@ -58,7 +59,7 @@ anchor.addEventListener("click", function(e) {
 });
 });
 
-  function updateSectionHeight() {
+function updateSectionHeight() {
     const box = document.querySelector('.bg3Box1');
     const section = document.querySelector('#bg3');
 
@@ -67,8 +68,8 @@ anchor.addEventListener("click", function(e) {
       const tinggiFinal = tinggiBox * 1.2;  //➕ 20%
       section.style.height = `${tinggiFinal}px`;
     }
-  }
+}
 
-  window.addEventListener('load', updateSectionHeight);
-  window.addEventListener('resize', updateSectionHeight);
+window.addEventListener('load', updateSectionHeight);
+window.addEventListener('resize', updateSectionHeight);
 

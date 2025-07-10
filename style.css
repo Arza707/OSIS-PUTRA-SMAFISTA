@@ -408,7 +408,7 @@ a{
 }
 
 .containerBg3 {
-  border: 3px solid;
+  border: 0px solid;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -421,7 +421,7 @@ a{
 
 .bg3Box1{
   display: flex;
-  border: 3px solid;
+  border: 0px solid;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -527,21 +527,25 @@ body { font-family: sans-serif; margin: 0; }
 .prev-btn {
   left: 10px;
   opacity: 0.3;
+  transition: all 0.15s ease-out;
 }
 
-.prev-btn:hover{
+#carousel-container:hover .prev-btn{
   opacity: 1;
   box-shadow: 10px 0px 10px black;
+  transition: all 0.15s ease-out;
 }
 
 .next-btn {
   right: 10px;
   opacity: 0.3;
+  transition: all 0.15s ease-out;
 }
 
-.next-btn:hover{
+#carousel-container:hover .next-btn{
   opacity: 1;
   box-shadow: -10px 0px 10px black;
+  transition: all 0.15s ease-out;
 }
 
 
