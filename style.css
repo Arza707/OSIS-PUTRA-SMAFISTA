@@ -403,6 +403,8 @@ a{
   box-shadow: 0px 0px 100px RGB(24, 67, 128);
   border-top-left-radius: 100% 100px;
   border-top-right-radius: 100% 100px;
+  border-bottom-left-radius: 100% 100px;
+  border-bottom-right-radius: 100% 100px;
   background-size: cover;
   
 }
@@ -414,7 +416,6 @@ a{
   justify-content: center;
   align-items: flex-start;
   border-color: red;
-  height:100%;
 }
 
 
@@ -548,11 +549,65 @@ body { font-family: sans-serif; margin: 0; }
   transition: all 0.15s ease-out;
 }
 
+/* ------------------------------------------------ Latar abu-abu ----------------------------------------------- */
 
+h1,p {
+  font-family: "sora", sans-serif;
+}
 
+#page {
+  border: 0px solid black;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
+#judulDivisi{
+  border: 0px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+#blogCard{
+  border: 0px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+#blogSekretaris {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #1f4491;
+  background: linear-gradient(to left, #eb9900, #ed8322);
+  height: fit-content;
+  transition: transform 0.5s ease;
+}
+
+#blogSekretaris:hover #sekretaris, #blogBendahara:hover #bendahara{
+  box-shadow: 0px 10px 50px  black; border-radius: 16px;
+}
+
+#blogSekretaris:hover, #blogBendahara:hover{
+  transform: scale(1.05);
+
+}
+
+#blogBendahara {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #437f86;
+  background: linear-gradient(to left, #68a0a6, #329382);
+  transition: transform 0.5s ease;
+  height: fit-content;
+}
 
 
 /* ------------------- Bagian POV dari Hp, sehingga layout di hp berbeda dari di desktop aar tidak berantakan ------------------- */
@@ -664,3 +719,4 @@ body { font-family: sans-serif; margin: 0; }
   from{margin-left: 280px;}
   to{margin-left: 0px;}
 }
+
