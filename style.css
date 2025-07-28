@@ -8,7 +8,7 @@ body, html {
   scroll-behavior: smooth;
 }
 
-h1{
+h1, p{
   font-family: "inter", sans-serif;
 }
 
@@ -551,14 +551,13 @@ body { font-family: sans-serif; margin: 0; }
 
 /* ------------------------------------------------ Latar abu-abu ----------------------------------------------- */
 
-h1,p {
-  font-family: "sora", sans-serif;
-}
+
 
 #page {
   border: 0px solid black;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100%;
   gap: 20px;
   flex-wrap: wrap;
@@ -577,6 +576,7 @@ h1,p {
   border: 0px solid black;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -590,24 +590,96 @@ h1,p {
   transition: transform 0.5s ease;
 }
 
-#blogSekretaris:hover #sekretaris, #blogBendahara:hover #bendahara{
-  box-shadow: 0px 10px 50px  black; border-radius: 16px;
-}
-
-#blogSekretaris:hover, #blogBendahara:hover{
-  transform: scale(1.05);
-
-}
-
 #blogBendahara {
   border: 0px solid black;
   width: calc(16px + 336px + 16px);
   border-radius: 16px;
-  box-shadow: 10px 10px 30px  #437f86;
+  box-shadow: 10px 10px 30px  #1f4491;
   background: linear-gradient(to left, #68a0a6, #329382);
   transition: transform 0.5s ease;
   height: fit-content;
 }
+#blogKeagamaan {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #1f4491;
+  background: linear-gradient(to left, #e0ab39, #ba7f19);
+  transition: transform 0.5s ease;
+  height: fit-content;
+}
+#blogK3 {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #1f4491;
+  background: linear-gradient(to right, #e64e52, #cf2425);
+  transition: transform 0.5s ease;
+  height: fit-content;
+}
+#blogPendidikan {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #1f4491;
+  background: linear-gradient(to right, #003459);
+  transition: transform 0.5s ease;
+  height: fit-content;
+}
+#blogFundraising {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #1f4491;
+  background: linear-gradient(to right, #e0ab39, #ba7f19);
+  transition: transform 0.5s ease;
+  height: fit-content;
+}
+#blogHumas {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #1f4491;
+  background: linear-gradient(to right, #f4a31d, #e64e52);
+  transition: transform 0.5s ease;
+  height: fit-content;
+}
+#blogITPD {
+  border: 0px solid black;
+  width: calc(16px + 336px + 16px);
+  border-radius: 16px;
+  box-shadow: 10px 10px 30px  #1f4491;
+  background: linear-gradient(to right, #f4978f, #2b2829);
+  transition: transform 0.5s ease;
+  height: fit-content;
+}
+
+#blogSekretaris:hover #sekretaris,
+#blogBendahara:hover #bendahara,
+#blogKeagamaan:hover #keagamaan,
+#blogK3:hover #K3,
+#blogPendidikan:hover #pendidikan,
+#blogFundraising:hover #pendidikan,
+#blogFundraising:hover #fundraising,
+#blogHumas:hover #humas,
+#blogITPD:hover #ITPD {
+  box-shadow: 0px 10px 50px black;
+  border-radius: 16px;
+}
+
+#blogSekretaris:hover,
+#blogBendahara:hover,
+#blogKeagamaan:hover,
+#blogK3:hover,
+#blogPendidikan:hover,
+#blogFundraising:hover,
+#blogFundraising:hover,
+#blogHumas:hover,
+#blogITPD:hover {
+  transform: scale(1.05);
+
+}
+
 
 
 /* ------------------- Bagian POV dari Hp, sehingga layout di hp berbeda dari di desktop aar tidak berantakan ------------------- */
