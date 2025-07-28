@@ -25,6 +25,17 @@ const targets = [
     document.getElementById("bg3Box5"),
     document.getElementById("bg3Box41"),
     document.getElementById("bg3Box51"),
+    document.getElementById("bg3Box52"),
+    document.getElementById("bg3Box53"),
+    document.getElementById("blogSekretaris"),
+    document.getElementById("blogBendahara"),
+    document.getElementById("blogKeagamaan"),
+    document.getElementById("blogPendidikan"),
+    document.getElementById("blogFundraising"),
+    document.getElementById("blogHumas"),
+    document.getElementById("blogITPD"),
+    document.getElementById("blogK3"),
+    document.getElementById("blogCard")
 ];
 targets.forEach(el => observer.observe(el));
 

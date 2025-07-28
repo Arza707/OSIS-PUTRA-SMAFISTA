@@ -457,15 +457,6 @@ a{
 }
 #bg3Box41{
   text-align: center;
-  flex-wrap: wrap;
-  border: 0px solid;
-  width: 100%;
-  border-color: bisque;
-  
-
-}
-#bg3Box5{
-  text-align: center;
   border: 0px solid;
   flex-wrap: wrap;
   width: 100%;
@@ -476,7 +467,17 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
+
+#bg3Box5{
+  text-align: center;
+  flex-wrap: wrap;
+  border: 0px solid;
+  width: 100%;
+  border-color: bisque;
+}
+
 #bg3Box51{
+
   text-align: center;
   border: 0px solid;
   flex-wrap: wrap;
@@ -487,6 +488,34 @@ a{
   -webkit-backdrop-filter: blur(10px); /* untuk Safari */
   border-radius: 20px;
   padding: 10px
+  
+}
+#bg3Box52{
+  text-align: center;
+  border: 0px solid;
+  flex-wrap: wrap;
+  width: 100%;
+  border-color: brown;
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  backdrop-filter: blur(10px); /* inilah efek blur */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  border-radius: 20px;
+  padding: 10px
+  
+}
+#bg3Box53{
+  
+  text-align: center;
+  border: 0px solid;
+  flex-wrap: wrap;
+  width: 100%;
+  border-color: brown;
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  backdrop-filter: blur(10px); /* inilah efek blur */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  border-radius: 20px;
+  padding: 10px
+  
 }
 
 * { box-sizing: border-box; }
@@ -597,7 +626,7 @@ body { font-family: sans-serif; margin: 0; }
   box-shadow: 10px 10px 30px  #1f4491;
   background: linear-gradient(to left, #68a0a6, #329382);
   transition: transform 0.5s ease;
-  height: fit-content;
+  height: 400px;
 }
 #blogKeagamaan {
   border: 0px solid black;
@@ -631,7 +660,7 @@ body { font-family: sans-serif; margin: 0; }
   width: calc(16px + 336px + 16px);
   border-radius: 16px;
   box-shadow: 10px 10px 30px  #1f4491;
-  background: linear-gradient(to right, #e0ab39, #ba7f19);
+  background: linear-gradient(to right, #ffefbf, #e64e52);
   transition: transform 0.5s ease;
   height: fit-content;
 }
@@ -640,7 +669,7 @@ body { font-family: sans-serif; margin: 0; }
   width: calc(16px + 336px + 16px);
   border-radius: 16px;
   box-shadow: 10px 10px 30px  #1f4491;
-  background: linear-gradient(to right, #f4a31d, #e64e52);
+  background: linear-gradient(to right, #ffc24c, #f4978f);
   transition: transform 0.5s ease;
   height: fit-content;
 }
@@ -649,7 +678,7 @@ body { font-family: sans-serif; margin: 0; }
   width: calc(16px + 336px + 16px);
   border-radius: 16px;
   box-shadow: 10px 10px 30px  #1f4491;
-  background: linear-gradient(to right, #f4978f, #2b2829);
+  background: linear-gradient(to right, #6b809b, #18bdf6);
   transition: transform 0.5s ease;
   height: fit-content;
 }
@@ -751,6 +780,9 @@ body { font-family: sans-serif; margin: 0; }
   #boxJudul{
    height: 250px;
   }
+
+  
+
 }
 /* ----------------------------------------- Bagian Animasi ---------------------------------------------------- */
 
