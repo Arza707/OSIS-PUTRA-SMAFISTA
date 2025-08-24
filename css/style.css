@@ -370,16 +370,15 @@ a{
 }
 .boxP1{
   border: 2px solid;
-  display: flex;
-  justify-content: center;
-  
+  text-align: justify;
   border-radius: 20px;
   font-family: "inter", sans-serif;
-  font-size: 25px;
+  font-size: 27.65px;
   background: rgba(255, 255, 255, 0.1); /* transparan */
   backdrop-filter: blur(10px); /* inilah efek blur */
   -webkit-backdrop-filter: blur(10px); /* untuk Safari */
-  padding: 0%;
+  padding-right: 30px;
+  padding-left: 30px;
   animation: slideAtas 2s ease-out;
 }
 
@@ -556,31 +555,35 @@ body { font-family: sans-serif; margin: 0; }
 
 .prev-btn {
   left: 10px;
-  opacity: 0.3;
+  opacity: 0;
   transition: all 0.15s ease-out;
 }
 
 #carousel-container:hover .prev-btn{
   opacity: 1;
-  box-shadow: 10px 0px 10px black;
+  
   transition: all 0.15s ease-out;
 }
 
 .next-btn {
   right: 10px;
-  opacity: 0.3;
+  opacity: 0;
   transition: all 0.15s ease-out;
 }
 
 #carousel-container:hover .next-btn{
   opacity: 1;
-  box-shadow: -10px 0px 10px black;
+  
   transition: all 0.15s ease-out;
 }
 
 /* ------------------------------------------------ Latar abu-abu ----------------------------------------------- */
 
-
+#bg4 { /* Background Abu-abu*/
+  height:fit-content;
+  background-size: cover;
+  
+}
 
 #page {
   border: 0px solid black;
@@ -588,8 +591,8 @@ body { font-family: sans-serif; margin: 0; }
   justify-content: center;
   align-items: center;
   height: 100%;
-  gap: 20px;
   flex-wrap: wrap;
+  padding: 150px;
 }
 
 #judulDivisi{
@@ -709,7 +712,128 @@ body { font-family: sans-serif; margin: 0; }
 
 }
 
+/* -------------------------------------------------- Latar Al-Fityan by Nendra ------------------------------------------*/
 
+#bg5 { /* Background awan*/
+  background-image: url("../picture/foto\ by\ nendra\ blur.png");
+  box-shadow: 0px 0px 100px RGB(24, 67, 128);
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+  border-bottom-left-radius: 100% 100px;
+  border-bottom-right-radius: 100% 100px;
+  background-size: cover;
+  height: fit-content;
+  padding: 50px;
+}
+
+
+
+.kotak1{
+    border: px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.1); /* transparan */
+    backdrop-filter: blur(10px); /* inilah efek blur */
+    -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+    border-radius: 20px;
+    width: 1300px;
+   
+}
+.kotakReview{
+    border: px solid black;
+    width: 700px;
+    padding: 100px;
+}
+.bintang{
+    width: 40px;
+    height: 40px;
+    border: 0px solid #F5C044; 
+    background-color: #F5C044; 
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kotakMetaGoogle{
+    border: px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    flex-wrap: wrap;
+}
+.latarGoogle{
+    border: px solid yellow;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 200px;
+    width: 800px;
+}
+.latarMeta{
+    border: px solid green;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    width: 800px;
+}
+.kotakGoogle{
+    border: px solid black;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    width: 390px;
+
+}
+.kotakMeta{
+    border: px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    width: 390px;
+
+}
+
+.custom-list {
+    list-style: none;   
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.custom-list li {
+    background: url("../resources/Done_ring_round_fill.svg") no-repeat left center;
+    background-size: 20px;   
+    padding-left: 30px;      
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+    .kotakReview{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media (max-width: 640px) {
+    .kotakGoogle,
+    .kotakMeta,
+    .latarGoogle,
+    .latarMeta{
+        width: 100%;
+      
+    }
+}
 
 /* ------------------- Bagian POV dari Hp, sehingga layout di hp berbeda dari di desktop aar tidak berantakan ------------------- */
 
@@ -825,6 +949,3 @@ body { font-family: sans-serif; margin: 0; }
   from{margin-left: 280px;}
   to{margin-left: 0px;}
 }
-
-
-
